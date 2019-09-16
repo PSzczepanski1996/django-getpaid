@@ -2,6 +2,8 @@ from django.views import View
 from django import http
 from getpaid import utils
 
+from django.views.decorators.csrf import csrf_exempt
+
 from . import PaymentProcessor
 
 
