@@ -43,8 +43,13 @@ class PaymentProcessor(PaymentProcessorBase):
     )
     BACKEND_LOGO_URL = 'getpaid/backends/payu_rest/payu_logo.png'
 
-    # _GATEWAY_URL = 'https://secure.payu.com/'
-    _GATEWAY_URL = 'https://secure.snd.payu.com/'
+    PAYU_PRODUCTION = getattr(settings, 'PAYU_PRODUCTION', False)
+
+    if PAYU_PRODUCTION is True:
+        _GATEWAY_URL = 'https://secure.payu.com/'
+    else:
+        _GATEWAY_URL = 'https://secure.snd.payu.com/'
+
     _ACCEPTED_LANGS = (
         "pl", "en", "de", "cs", "bg", "el", "es", "et", "fi", "fr", "hr",
         "hu", "it", "lt", "lv", "pt", "ro", "ru", "sk", "sl", "sv", "uk",

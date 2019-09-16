@@ -14,6 +14,7 @@ class ConfirmationWebhook(View):
     This view receives payment status updates from PayU.
     """
 
+    @csrf_exempt
     def post(self, request, *args, **kwargs):
         payload = get_request_body(request).decode('utf-8')
         if not payload:

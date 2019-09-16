@@ -4,5 +4,5 @@ from .views import ConfirmationWebhook
 
 
 urlpatterns = [
-    url(r'^confirm/$', ConfirmationWebhook.as_view(), name='confirm'),
+    url(r'^confirm/$', csrf_exempt(ConfirmationWebhook.as_view()), name='confirm'),
 ]
