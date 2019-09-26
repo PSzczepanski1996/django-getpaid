@@ -237,7 +237,7 @@ class PaymentProcessor(PaymentProcessorBase):
             extOrderId=str(self.payment.pk),
             # validityTime='',
             # additionalDescription='',
-            continueUrl='http://127.0.0.1:8000/',
+            continueUrl=getattr(settings, 'GETPAID_REDIRECT_URL_NAME', None),
             # payMethods=None,
         )
 
