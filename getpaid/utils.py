@@ -7,7 +7,7 @@ from django.conf import settings
 from django.contrib.sites.shortcuts import get_current_site
 from django.urls import reverse
 import six
-from django.utils.six.moves.urllib.parse import parse_qsl
+from six.moves.urllib.parse import parse_qsl
 
 if six.PY3:
     unicode = str
