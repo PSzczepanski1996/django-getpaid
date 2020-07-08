@@ -6,7 +6,7 @@ from django.apps import apps
 from django.test import TestCase
 from django.test.client import Client
 from django.urls import reverse
-from django.utils import six
+import six
 from orders.models import Order
 
 import getpaid

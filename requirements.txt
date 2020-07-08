@@ -9,3 +9,4 @@ pendulum
 anyjson
 deprecated
 simplejson
+six==1.15.0
