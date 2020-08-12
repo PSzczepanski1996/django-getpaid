@@ -56,7 +56,10 @@ setup(
         'getpaid',
     ],
     include_package_data=True,
-    install_requires=["django-model-utils>=2.0", ],
+    install_requires=[
+        "django-model-utils >= 2.0",
+        "six == 1.15.0",
+    ],
     license="MIT",
     zip_safe=False,
     keywords='django-getpaid',
