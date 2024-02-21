@@ -1,12 +1,12 @@
-django-model-utils>=2.0
+setuptools<58.0.0
+django-model-utils==4.4.0
 # Additional requirements go here
-requests
-lxml
-python-dateutil
-django-celery
-celery
-pendulum
-anyjson
-deprecated
-simplejson
-six==1.15.0
+requests==2.31.0
+lxml==5.1.0
+python-dateutil==2.8.2
+django-celery-beat==2.5.0
+celery==5.3.6
+pendulum==3.0.0
+deprecated==1.2.14
+simplejson==3.19.2
+six==1.16.0

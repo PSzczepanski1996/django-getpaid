@@ -57,8 +57,8 @@ setup(
     ],
     include_package_data=True,
     install_requires=[
-        "django-model-utils >= 2.0",
-        "six == 1.15.0",
+        "django-model-utils == 4.4.0",
+        "six == 1.16.0",
     ],
     license="MIT",
     zip_safe=False,
@@ -78,9 +78,9 @@ setup(
         'Programming Language :: Python :: 3.6',
     ],
     extras_require={
-        'payu': [
-            'django-celery>=3.0.11',
-        ],
+        # 'payu': [
+        #     'django-celery==3.0.11',
+        # ],
         # 'przelewy24': [
         #     'django-celery>=3.0.11',
         #     'pytz',
