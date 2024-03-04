@@ -5,8 +5,7 @@ from django.apps import apps
 from django.db import models
 import six
 from django.utils.timezone import utc
-from django.utils.translation import ugettext_lazy as _
-from django.utils.encoding import python_2_unicode_compatible
+from django.utils.translation import gettext_lazy as _
 from .abstract_mixin import AbstractMixin
 from getpaid import signals
 from .utils import import_backend_modules
@@ -31,7 +30,6 @@ class PaymentManager(models.Manager):
         return super(PaymentManager, self).get_queryset().select_related('order')
 
 
-@python_2_unicode_compatible
 class PaymentFactory(models.Model, AbstractMixin):
     """
     This is an abstract class that defines a structure of Payment model that will be

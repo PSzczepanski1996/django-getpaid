@@ -1,6 +1,5 @@
 from django.db import models
 from django.urls import reverse
-from django.utils.encoding import python_2_unicode_compatible
 
 import getpaid
 
@@ -10,7 +9,6 @@ ORDER_STATUS_CHOICES = (
 )
 
 
-@python_2_unicode_compatible
 class Order(models.Model):
     """
     This is an example Order object. This one is very simple - is only one item,

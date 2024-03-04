@@ -12,7 +12,7 @@ import six
 from six.moves.urllib.request import Request, urlopen
 from six.moves.urllib.parse import urlencode
 from django.core.exceptions import ImproperlyConfigured
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from deprecated import deprecated
 
 from getpaid import signals

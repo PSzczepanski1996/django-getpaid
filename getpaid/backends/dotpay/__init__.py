@@ -10,7 +10,7 @@ from django.core.exceptions import ImproperlyConfigured
 from django.urls import reverse
 import six
 from django.utils.timezone import utc
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 from six.moves.urllib.parse import urlencode
 
 from getpaid import signals
