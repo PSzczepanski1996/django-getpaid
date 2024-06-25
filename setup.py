@@ -57,7 +57,7 @@ setup(
     ],
     include_package_data=True,
     install_requires=[
-        "django-model-utils == 4.4.0",
+        "django-model-utils == 4.1.1",
         "six == 1.16.0",
     ],
     license="MIT",
