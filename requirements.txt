@@ -1,7 +1,7 @@
 setuptools<58.0.0
-django-model-utils==4.4.0
+django-model-utils==4.1.1
 # Additional requirements go here
-requests==2.31.0
+requests==2.32.3
 lxml==5.1.0
 python-dateutil==2.8.2
 django-celery-beat==2.5.0
